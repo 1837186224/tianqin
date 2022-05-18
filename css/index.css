@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    bottom: 0;
+    text-decoration: none;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    margin: 0 auto;
+    width: 1140px;
+    height: 100%;
+    line-height: inherit;
+}
+
+.clearfix:after {
+    content: "020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /* 触发 hasLayout */
+    zoom: 1;
+}
+
+
+
+
+.head {
+    height: 100px;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+}
+
+.head-container .head-l,
+.head-container .head-r {
+    height: 30px;
+    line-height: 30px;
+    font-family: MyriadPro-Regular;
+    text-align: center;
+    color: #fff;
+    background-color: #f92525;
+}
+
+.head-container .head-l {
+    width: 105px;
+}
+
+.head-container .head-r {
+    width: 110px;
+    border-radius: 2px;
+}
+
+.main {
+    padding-bottom: 50px;
+    background-color: #f5f8f9;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container .nav-l {
+    /* background: green; */
+}
+
+.nav-container .nav-l h2 {
+    font-family: Raleway-Regular;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 50px;
+    letter-spacing: 0px;
+    color: #262b2e;
+}
+
+.nav-container .nav-l p {
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #262b2e;
+    opacity: 0.7;
+}
+
+.nav-container .nav-r {
+    /* background: green; */
+}
+
+.nav-container .nav-r ul {}
+
+.nav-container .nav-r ul li {
+    float: left;
+    margin: 0 10px;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+.nav-container .nav-r ul li a {
+    color: #262b2e;
+}
+
+.nav-container .nav-r ul li:hover a {
+    color: #f92525;
+}
+
+.nav-container .nav-r ul li.active {
+    border-bottom: 2px solid rgba(38, 43, 46, 0.2);
+}
+
+
+
+/* ------  */
+
+.con-container {
+    margin-top: 50px;
+}
+
+.info-container {
+    float: right;
+    width: 560px;
+    height: 288px;
+    background-color: #fff;
+}
+
+.info-container .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 110px;
+    line-height: 110px;
+    border-bottom: 1px solid rgba(32, 33, 36, 0.07);
+}
+
+.info-container .title p {
+    font-family: OpenSans;
+    font-size: 18px;
+    color: #262b2e;
+}
+
+.info-container .title button {
+    width: 95px;
+    height: 40px;
+    border-radius: 2px;
+    border: solid 2px rgba(38, 43, 46, 0.1);
+
+}
+
+.info-container .title button:hover {
+    color: #f92525;
+}
+
+.info-container .cont {
+    padding: 28px 50px 36px;
+}
+
+.info-container .cont table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    text-align: center;
+}
+
+td {
+    padding: 10px 0;
+}
+
+td>span {
+    padding: 4px 5px;
+    font-family: OpenSans-Bold;
+    font-size: 13px;
+    color: #fff;
+    background-color: #5dd054;
+    border-radius: 2px;
+}
+
+td>span:hover {
+    background-color: #20721a;
+
+}
+
+
+
+.echarts-container {
+    margin-top: 20px;
+    padding: 30px 40px;
+    height: 350px;
+    background-color: #fff;
+}
+
+#echartsLine {
+    width: 100%;
+    height: 100%;
+}
+
+
+.echarts-tow-container {
+    margin-top: 20px;
+}
+
+.pie-container,
+.bar-container {
+    padding: 40px 0;
+    width: 560px;
+    height: 378px;
+    background-color: #fff;
+}
+
+.pie-container {
+    float: left;
+}
+
+.bar-container {
+    float: right;
+}
+
+#pie,
+#bar {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ------  */
+.footer {
+    padding-top: 80px;
+    height: 290px;
+    background-color: #202124;
+
+}
+
+.footer .logo-cont {
+    float: left;
+}
+
+.footer .logo-cont span {
+    display: inline-block;
+    width: 105px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #f92525;
+}
+
+.footer .foot-right {
+    float: left;
+    margin-left: 78px;
+    display: flex;
+    justify-content: space-between;
+    width: 705px;
+}
+
+.footer .foot-right p {
+    padding-bottom: 10px;
+    font-family: Raleway-Bold;
+    font-size: 13px;
+    color: #fff;
+}
